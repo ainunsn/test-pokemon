@@ -1,0 +1,11 @@
+.form-input {
+  border-radius: 4px;
+  padding: 0.8em;
+  width: fit-content;
+  border: 1px solid rgb(204, 204, 204);
+  width: 20%;
+}
+.form-input:focus {
+  outline: none !important;
+  border: 1px solid rgb(204, 204, 204);
+}

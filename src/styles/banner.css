@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@100;300&display=swap");
+.banner-container {
+  background-color: #ffcc00;
+  height: 400px;
+  width: 100vw;
+  position: relative;
+}
+
+.banner-container .title {
+  color: white;
+  font-size: 80px;
+  font-weight: 900;
+  position: absolute;
+  bottom: 0;
+  margin-left: 20%;
+  font-family: "Poppins", sans-serif;
+  animation: infiniteLoop 7s infinite;
+}
+
+.banner-container .border {
+  background-color: white;
+  height: 1000px;
+  width: 100px;
+}
+.banner-container .image {
+  display: flex;
+  justify-content: end;
+}
+.banner-container .image img {
+  animation: pokemon 7s infinite;
+}
+
+@media (max-width: 480px) {
+  .banner-container .title {
+    color: white;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    font-size: 50px;
+  }
+  .banner-container .image {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -100px;
+    display: flex;
+    justify-content: end;
+    width: 100vw;
+  }
+  .banner-container .image img {
+    width: 300px;
+    animation: none;
+  }
+}
+
+@keyframes infiniteLoop {
+  0% {
+    margin-left: 0px;
+    opacity: 0;
+  }
+  50% {
+    margin-left: 20%;
+    opacity: 1;
+  }
+  100% {
+    margin-left: 0%;
+    opacity: 0;
+  }
+}
+@keyframes pokemon {
+  0% {
+    opacity: 0;
+    margin-right: 0px;
+  }
+  80% {
+    opacity: 1;
+    margin-right: 100px;
+  }
+  100% {
+    margin-right: 0px;
+    opacity: 0;
+  }
+}

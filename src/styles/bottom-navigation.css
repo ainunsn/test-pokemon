@@ -1,0 +1,38 @@
+@media (max-width: 480px) {
+  .bottom-navigation {
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(226, 226, 226);
+  }
+
+  .bottom-navigation a {
+    padding: 14px 16px;
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+  }
+  .bottom-navigation .color-yellow {
+    color: #ffcc01;
+  }
+
+  .bottom-navigation a:hover {
+    background: #f1f1f1;
+    color: black;
+  }
+
+  .bottom-navigation a.active {
+    background-color: #ebebeb;
+    color: white;
+  }
+}
+
+@media (min-width: 480px){
+    .bottom-navigation{
+        display: none;
+    }
+}
