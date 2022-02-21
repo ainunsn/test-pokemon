@@ -31,7 +31,6 @@ function PokemonStats(props) {
               css={{
                 marginTop: "20px",
                 position: "relative",
-                marginLeft: key > 0 && "50px",
               }}
               className="diagram-container"
               data-testid="diagram-stat"
@@ -48,7 +47,6 @@ function PokemonStats(props) {
                   animation: `${diagram(
                     s.base_stat > 150 ? 0 : 150 - s.base_stat
                   )} 2s linear`,
-                  marginLeft: "10px",
                 }}
               >
                 <span>{s.base_stat}</span>
@@ -62,19 +60,23 @@ function PokemonStats(props) {
                   animation: `${diagram(
                     s.base_stat > 150 ? 0 : 150 - s.base_stat
                   )} 2s linear`,
-                  marginLeft: "10px",
-                }}
-              ></div>
-              <div
-                css={{
-                  textAlign: "center",
-                  width: "10px",
-                  writingMode: "vertical-rl",
-                  position: "absolute",
-                  bottom: 0,
+                  position: "relative",
                 }}
               >
-                {formatDashString(s.stat.name)}
+                <div
+                  css={{
+                    textAlign: "center",
+                    writingMode: "vertical-rl",
+                    position: "absolute",
+                    bottom: 0,
+                    width: "100%",
+                    display: "flex",
+                    alignItems: "center",
+                    marginBottom: "10px",
+                  }}
+                >
+                  {formatDashString(s.stat.name)}
+                </div>
               </div>
             </div>
           ))}
