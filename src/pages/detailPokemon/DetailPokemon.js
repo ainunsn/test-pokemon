@@ -113,7 +113,7 @@ function DetailPokemon(props) {
                 <img src={PokemonBg} />
               </div>
               <div className="pokemon-image">
-                <img src={imageUrl + params.id + ".svg"} />
+                <img src={imageUrl + params.id + ".svg"} width="300" />
               </div>
             </div>
           </div>
@@ -129,6 +129,7 @@ function DetailPokemon(props) {
                 <p
                   css={{
                     color: isSuccess ? "green" : "red",
+                    textAlign: 'center'
                   }}
                   data-testid={`catch-message-${isSuccess}`}
                 >
