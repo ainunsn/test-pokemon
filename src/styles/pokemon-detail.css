@@ -49,16 +49,13 @@
 
 @media (max-width: 480px) {
   .diagram-status {
-    width: 10px !important;
+    width: 20px !important;
   }
   .diagram-card-container {
     padding: 2em !important;
   }
   .forms-card-container {
     padding: 0 2em 2em 2em !important;
-  }
-  .diagram-container {
-    margin-left: 20px !important;
   }
 }
 
