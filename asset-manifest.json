@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/pokemon-pages/static/css/main.d6952b0a.css",
-    "main.js": "/pokemon-pages/static/js/main.aaf4a7fd.js",
-    "static/js/787.ab378faf.chunk.js": "/pokemon-pages/static/js/787.ab378faf.chunk.js",
-    "static/media/pikachu.png": "/pokemon-pages/static/media/pikachu.68bfdb3a60ea2809d269.png",
-    "static/media/pokemon_bg.png": "/pokemon-pages/static/media/pokemon_bg.291e2c728414c6774136.png",
-    "static/media/logo.png": "/pokemon-pages/static/media/logo.d777a87c969da7923ce8.png",
-    "static/media/logo.svg": "/pokemon-pages/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
-    "index.html": "/pokemon-pages/index.html",
-    "main.d6952b0a.css.map": "/pokemon-pages/static/css/main.d6952b0a.css.map",
-    "main.aaf4a7fd.js.map": "/pokemon-pages/static/js/main.aaf4a7fd.js.map",
-    "787.ab378faf.chunk.js.map": "/pokemon-pages/static/js/787.ab378faf.chunk.js.map"
+    "main.css": "/test-pages/static/css/main.d6952b0a.css",
+    "main.js": "/test-pages/static/js/main.1ff7d165.js",
+    "static/js/787.ab378faf.chunk.js": "/test-pages/static/js/787.ab378faf.chunk.js",
+    "static/media/pikachu.png": "/test-pages/static/media/pikachu.68bfdb3a60ea2809d269.png",
+    "static/media/pokemon_bg.png": "/test-pages/static/media/pokemon_bg.291e2c728414c6774136.png",
+    "static/media/logo.png": "/test-pages/static/media/logo.d777a87c969da7923ce8.png",
+    "static/media/logo.svg": "/test-pages/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/test-pages/index.html",
+    "main.d6952b0a.css.map": "/test-pages/static/css/main.d6952b0a.css.map",
+    "main.1ff7d165.js.map": "/test-pages/static/js/main.1ff7d165.js.map",
+    "787.ab378faf.chunk.js.map": "/test-pages/static/js/787.ab378faf.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d6952b0a.css",
-    "static/js/main.aaf4a7fd.js"
+    "static/js/main.1ff7d165.js"
   ]
 }
