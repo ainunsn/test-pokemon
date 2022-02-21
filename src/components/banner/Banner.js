@@ -8,7 +8,7 @@ function Banner(props) {
       <div className="banner-container">
         <div className="title">Find and catch <br /> your Pokemon</div>
         <div className="image">
-          <img src={Pikachu} />
+          <img data-testid="pikachu-image" src={Pikachu} />
         </div>
       </div>
     </>

@@ -34,6 +34,7 @@ function PokemonStats(props) {
                 marginLeft: key > 0 && "50px",
               }}
               className="diagram-container"
+              data-testid="diagram-stat"
             >
               <div
                 className="diagram-status"

@@ -5,7 +5,7 @@ function ListPokemon({ pokemon }) {
   return (
     <div className="row justify-content-between">
       {pokemon.map((pok, index) => (
-        <Pokemon {...pok} key={index} />
+        <Pokemon {...pok} key={index} index={index} />
       ))}
     </div>
   );

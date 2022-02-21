@@ -1,21 +1,31 @@
+import api from "api/api";
 import Banner from "components/banner/Banner";
 import LoadingPage from "components/loading/LoadingPage";
 import Pagination from "components/pagination/Pagination";
 import ListPokemon from "components/pokemon/ListPokemon";
 import useQuery from "hooks/useQuery";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router";
-import { capitalize } from "utils";
-
 function Pokemon(props) {
   const query = useQuery();
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const page = query.get("page") || 1;
-  const perPage = 10;
+  const perPage = 8;
 
   const s = useSelector(({ reducer }) => reducer);
+
+  const [test, setTest] = useState({ data: {}, loading: true });
+
+  useEffect(async () => {
+    let res = await api.get(`/pokemon`);
+
+    setTest({
+      loading: false,
+      data: res.data,
+    });
+  }, []);
 
   const onPageChange = (page) => {
     navigate(`?page=${page}`);
@@ -26,13 +36,18 @@ function Pokemon(props) {
     dispatch({ type: "FETCH_POKEMON_REQUESTED", offset });
   }, [page]);
 
+  if (s.pokemon.loading) {
+    return <LoadingPage />;
+  }
+
   return (
     <>
-      {s.pokemon.loading && <LoadingPage />}
       <Banner />
       <div className="pokemon-main">
         <div className="total-pokemon">
-          <p>Total of pokemon are {s.pokemon.data?.count || 0}</p>
+          <p data-testid="total-pokemon">
+            Total of pokemon are {s.pokemon.data?.count || 0}
+          </p>
         </div>
         <ListPokemon pokemon={s.pokemon.data.results || []} />
         <div className="pokemon-pagination">

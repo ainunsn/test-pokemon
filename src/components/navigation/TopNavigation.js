@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import paths from "./navigationPath";
 
 import Logo from "assets/logo.png";
-import Input from "components/input/Input";
 
 function TopNavigation(props) {
   const location = useLocation();

@@ -6,6 +6,7 @@ import { capitalize } from "utils";
 function Badge({ value }) {
   return (
     <p
+      data-testid="custom-badge"
       css={{
         textAlign: "center",
         backgroundColor: "#0e61a7",
@@ -13,10 +14,9 @@ function Badge({ value }) {
         color: "white",
         padding: "0.2em 1.2em",
       }}
-
       className="bagde"
     >
-      {capitalize(value)}
+      {value && capitalize(value)}
     </p>
   );
 }

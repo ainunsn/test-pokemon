@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`match snapshot 1`] = `
+<p
+  className="bagde css-10ut616-Badge"
+  data-testid="custom-badge"
+>
+  Value
+</p>
+`;

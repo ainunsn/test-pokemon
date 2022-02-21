@@ -20,7 +20,7 @@ function Pokemon(props) {
     <div className="col-6 col-lg-3 mt-4">
       <div className="pokemon-card " onClick={() => navigate(`/pokemon/${id}`)}>
         <div className="d-flex justify-content-center">
-          {loading ? <p>Loading...</p> : <img src={imageUrl + id + ".svg"} />}
+          {loading ? <p>Loading...</p> : <img src={imageUrl + id + ".svg"} data-testid="pokemon-image" />}
         </div>
         <div>
           <p className="text-center">{capitalize(props.name)}</p>

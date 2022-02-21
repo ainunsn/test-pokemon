@@ -99,9 +99,12 @@ function DetailPokemon(props) {
     }
   };
 
+  if (s.detailPokemon.loading || loading) {
+    return <LoadingPage />
+  }
+
   return (
     <>
-      {(s.detailPokemon.loading || loading) && <LoadingPage />}
       <div className="pokemon-detail-main">
         <div className="row">
           <div className="col-12 col-lg-4">
@@ -127,6 +130,7 @@ function DetailPokemon(props) {
                   css={{
                     color: isSuccess ? "green" : "red",
                   }}
+                  data-testid={`catch-message-${isSuccess}`}
                 >
                   {caughtMessage && isSuccess != null && caughtMessage}
                 </p>
