@@ -12,7 +12,6 @@ function App() {
 
       <RoutesConfig />
       <BottomNavigation />
-      {/* <LoadingPage /> */}
     </div>
   );
 }

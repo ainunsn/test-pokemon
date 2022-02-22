@@ -21,7 +21,7 @@ function ListCaugthPokemon({ myPokemon, parsedPokemon, deletePokemon }) {
           toggle={() => setIsDelete((prev) => !prev)}
           nickname={detail?.nickname}
           deletePokemon={() => {
-            deletePokemon(detail?.index);
+            deletePokemon(detail?.index + 1);
           }}
         />
       )}
