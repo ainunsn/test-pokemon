@@ -11,6 +11,7 @@ function PokemonName({ name }) {
         color: "#0e61a7",
         fontWeight: "bold",
       }}
+      data-testid="pokemon-name"
     >
       {capitalize(name)}
     </p>
